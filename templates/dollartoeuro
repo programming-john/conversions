@@ -5,7 +5,6 @@
   <form action='/response'>
     Enter Dollar Amount:<br>
     <input type="text" name="euros">
-    <br><br>
     <input type="Convert!">
   </form>
 {% endblock %}
