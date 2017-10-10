@@ -1,0 +1,11 @@
+{% extends "response.html" %}
+{% block title %}Euros to Dollars{% endblock %}
+
+{% block content %}
+  <form action='/response'>
+    Enter Euros:<br>
+    <input type="text" name="dollars">
+    <br><br>
+    <input type="Convert!">
+  </form>
+{% endblock %}
