@@ -7,17 +7,16 @@ def render_main():
     return render_template('index.html')
 
 @app.route("canadatounited")
-def render_page1();
+def render_page1():
     return render_template('canadatounited.html')
 
 @app.route("eurotodollar")
-def render_page2();
+def render_page2():
     return render_template('eurotodollar.html')
 
 @app.route("dollartoeuro")
-def render_page3();
+def render_page3():
     return render_template('dollartoeuro.html')
-
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)
