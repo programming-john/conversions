@@ -1,5 +1,4 @@
 {% extends "response.html" %}
-{% set active_page = "p1" %}
 {% block title %}Canadian Dollar to the U.S Dollar{% endblock %}
 
 {% block content %}
