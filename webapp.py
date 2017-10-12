@@ -18,9 +18,21 @@ def render_page2():
 def render_page3():
     return render_template('dollartoeuro.html')
 
-@app.route("/response")
+@app.route("/convertcd")
 def render_response():
     memes = float(request.args['dollars'])
+    if in request.args:
+        reply= float(request.args['dollars']) * .80
+    return render_template('response.html', memes)
+
+@app.route("/convertue")
+def render_response():
+    memes = float(request.args['dollars'])
+    return render_template('response.html', memes)
+
+@app.route("/converteu")
+def render_response():
+    memes = float(request.args['euros'])
     return render_template('response.html', memes)
 
 if __name__=="__main__":
