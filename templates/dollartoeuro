@@ -1,5 +1,5 @@
 {% extends "response.html" %}
-{% set active_page = "page2" %}
+{% set active_page = "p2" %}
 {% block title %}Dollars to Euros{% endblock %}
 
 {% block content %}
