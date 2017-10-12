@@ -23,21 +23,21 @@ def render_response():
     memes = float(request.args['dollars'])
     if 'dollars' in request.args:
         reply= float(request.args['dollars']) * .80
-    return render_template('response.html', response=reply)
+    return render_template('convertcd.html', response=reply)
 
 @app.route("/convertue")
 def render_response():
     jokes = float(request.args['dollars'])
     if 'dollars' in request.args:
         reply= float(request.args['dollars']) * 1.18
-    return render_template('response.html', response=reply)
+    return render_template('convertue.html', response=reply)
 
 @app.route("/converteu")
 def render_response():
     memes = float(request.args['euros'])
     if 'euros' in request.args:
         reply= float(request.args['euros']) * .85
-    return render_template('response.html', response=reply)
+    return render_template('converteu.html', response=reply)
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)
