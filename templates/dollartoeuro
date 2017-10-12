@@ -4,7 +4,7 @@
 
 {% block content %}
   <form action='/response'>
-    Enter Dollar Amount:<br>
+    Enter Dollar Amount:
     <input type="text" name="euros">
     <input type="Convert!">
   </form>
