@@ -1,5 +1,4 @@
 {% extends "response.html" %}
-
 {% block title %}Euros to Dollars{% endblock %}
 
 {% block content %}
