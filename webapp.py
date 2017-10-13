@@ -25,14 +25,14 @@ def render_response():
         reply= float(request.args['dollars']) * .80
     return render_template('convertcd.html', response=reply)
 
-@app.route("/response")
+@app.route("/response1")
 def render_response2():
     memes = float(request.args['dollars'])
     if 'dollars' in request.args:
         reply= float(request.args['dollars']) * 1.18
     return render_template('convertue.html', response=reply)
 
-@app.route("/response")
+@app.route("/response2")
 def render_response3():
     memes= float(request.args['euros'])
     if 'euros' in request.args:
