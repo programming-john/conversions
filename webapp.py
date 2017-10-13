@@ -6,33 +6,33 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     return render_template('index.html')
 
-@app.route("/canadatounited")
+@app.route("/response")
 def render_page1():
     return render_template('canadatounited.html')
 
-@app.route("/eurotodollar")
+@app.route("/response")
 def render_page2():
     return render_template('eurotodollar.html')
 
-@app.route("/dollartoeuro")
+@app.route("/response")
 def render_page3():
     return render_template('dollartoeuro.html')
 
-@app.route("/convertcd")
+@app.route("/response")
 def render_response():
     memes = float(request.args['dollars'])
     if 'dollars' in request.args:
         reply= float(request.args['dollars']) * .80
     return render_template('convertcd.html', response=reply)
 
-@app.route("/convertue")
+@app.route("/response")
 def render_response2():
     memes = float(request.args['dollars'])
     if 'dollars' in request.args:
         reply= float(request.args['dollars']) * 1.18
     return render_template('convertue.html', response=reply)
 
-@app.route("/converteu")
+@app.route("/response")
 def render_response3():
     memes= float(request.args['euros'])
     if 'euros' in request.args:
