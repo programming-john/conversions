@@ -25,12 +25,12 @@ def render_response():
 
 @app.route("/convertue")
 def render_response2():
-    memes = float(request.args['dollars'])
+    memes = float(request.args['euros'])
     return render_template('convertue.html', result=memes*1.18)
 
 @app.route("/converteu")
 def render_response3():
-    memes= float(request.args['euros'])
+    memes= float(request.args['dollars'])
     return render_template('converteu.html', result=memes*.85)
 
 if __name__=="__main__":
