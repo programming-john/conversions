@@ -21,23 +21,17 @@ def render_page3():
 @app.route("/convertcd")
 def render_response():
     memes = float(request.args['dollars'])
-    #if 'dollars' in request.args:
-        #reply= float(request.args['dollars']) * .80
     return render_template('convertcd.html', result=memes*.80)
 
 @app.route("/convertue")
 def render_response2():
     memes = float(request.args['dollars'])
-    if 'dollars' in request.args:
-        reply= float(request.args['dollars']) * 1.18
-    return render_template('convertue.html', response=reply)
+    return render_template('convertue.html', result=memes*1.18)
 
 @app.route("/converteu")
 def render_response3():
     memes= float(request.args['euros'])
-    if 'euros' in request.args:
-        reply= float(request.args['euros']) * .85
-    return render_template('converteu.html', response=reply)
+    return render_template('converteu.html', result=memes*.85)
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)
