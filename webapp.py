@@ -27,9 +27,9 @@ def render_response():
 
 @app.route("/convertue")
 def render_response2():
-    memes = float(request.args['dollars'])
+    memes = float(request.args['euros'])
     if 'dollars' in request.args:
-        reply= float(request.args['dollars']) * 1.18
+        reply= float(request.args['euros']) * 1.18
     return render_template('convertue.html', response=reply)
 
 @app.route("/converteu")
