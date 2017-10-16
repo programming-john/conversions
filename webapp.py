@@ -14,7 +14,7 @@ def render_page1():
 def render_page2():
     return render_template('eurotodollar.html')
 
-@app.route("/dolartoeuro")
+@app.route("/dollartoeuro")
 def render_page3():
     return render_template('dollartoeuro.html')
 
