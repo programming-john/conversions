@@ -1,2 +1,2 @@
 # conversions
-https://dashboard.heroku.com/apps/my-conversion/deploy/github
+https://my-conversion.herokuapp.com/
